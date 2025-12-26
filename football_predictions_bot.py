@@ -16,7 +16,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 # Replace with your Telegram bot token and channel ID
 TELEGRAM_TOKEN = '7882849253:AAFueHr2G1TUPB6-MGXg9ms9FkyA8XTqHCs'
-CHANNEL_ID = '@your_channel_name'  # or user chat_id
+CHANNEL_ID = '1176756945'  # or user chat_id
 
 # League URL (example: English Premier League on Flashscore KZ)
 LEAGUE_URL = 'https://www.flashscorekz.com/football/'
