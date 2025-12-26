@@ -15,7 +15,7 @@ from contextlib import contextmanager
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Replace with your Telegram bot token and channel ID
-TELEGRAM_TOKEN = '7882849253:AAFueHr2G1TUPB6-MGXg9ms9FkyA8XTqHCs'
+TELEGRAM_TOKEN = '7977608212:AAGiE_osg97Z-XP_jUX0hHtWz2ntesgAfFU'
 CHANNEL_ID = '1176756945'  # or user chat_id
 
 # League URL (example: English Premier League on Flashscore KZ)
@@ -266,7 +266,7 @@ def send_daily_predictions():
 
 if __name__ == '__main__':
     scheduler = BackgroundScheduler()
-    scheduler.add_job(send_daily_predictions, 'cron', hour=13, minute=13)  # Every day at 8:00
+    scheduler.add_job(send_daily_predictions, 'cron', hour=13, minute=21)  # Every day at 8:00
     scheduler.start()
     
     print("Bot started. Waiting for scheduled tasks...")
