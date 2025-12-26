@@ -266,7 +266,7 @@ def send_daily_predictions():
 
 if __name__ == '__main__':
     scheduler = BackgroundScheduler()
-    scheduler.add_job(send_daily_predictions, 'cron', hour=13, minute=10)  # Every day at 8:00
+    scheduler.add_job(send_daily_predictions, 'cron', hour=13, minute=13)  # Every day at 8:00
     scheduler.start()
     
     print("Bot started. Waiting for scheduled tasks...")
